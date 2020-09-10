@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+  </head>
+  <style>
+    body {
+      text-align: center;
+    }
+    .container {
+      background-color: mediumpurple;
+      border-radius: 10%;
+      margin: 35px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    div.form-input {
+      width: 50%;
+      margin: auto;
+    }
+    div.form-input > label {
+      display: block;
+      text-align: justify;
+      margin: 10px 0px 5px 0px;
+    }
+    .w-100 {
+      width: 100%;
+    }
+    .input-height {
+      height: 5vh;
+    }
+    .btn {
+      padding: 10px;
+      border-radius: 10%;
+      border: none;
+    }
+    .bnt-primary {
+      background-color: #38c2ef;
+      color: white;
+      font-weight: 700;
+    }
+		.btn-submit{
+			cursor: pointer;
+		}
+		.bnt-primary:hover{
+			background-color: #14637d;
+		}
+  </style>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Fill out this survey from</p>
+    <div class="container">
+      <form id="survey-form" action="">
+        <div class="form-input">
+          <label for="name" id="name-label">Name</label>
+          <input
+            required
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter Your Full Name"
+            class="w-100 input-height"
+          />
+        </div>
+        <div class="form-input">
+          <label for="email" id="email-label">Email</label>
+          <input
+            required
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter valid Email ID"
+            class="w-100 input-height"
+          />
+        </div>
+        <div class="form-input">
+          <label for="email" id="number-label">Age(Optional)</label>
+          <input
+            type="number"
+            name="number"
+            id="number"
+            min="18"
+            max="35"
+            placeholder="Enter age between 18-35"
+            class="w-100 input-height"
+          />
+        </div>
+        <div class="form-input">
+          <label for="dropdown">Select Country</label>
+          <select name="dropdown" id="dropdown" class="w-100 input-height">
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="france">France</option>
+          </select>
+        </div>
+        <div class="form-input">
+          <label for="Gender">Gender</label>
+          <label for="male"
+            ><input
+              type="radio"
+              name="gender"
+              id="male"
+              value="Male"
+            />Male</label
+          >
+          <label for="female"
+            ><input
+              type="radio"
+              name="gender"
+              id="female"
+              value="Female"
+            />Female</label
+          >
+        </div>
+        <div class="form-input">
+          <label for="Gender">Websites You have used</label>
+          <label for="google"
+            ><input
+              type="checkbox"
+              name="website"
+              id="google"
+              value="google"
+            />Google</label
+          >
+          <label for="facebook"
+            ><input
+              type="checkbox"
+              name="website"
+              id="facebook"
+              value="google"
+            />Facebook</label
+          >
+          <label for="fcc"
+            ><input
+              type="checkbox"
+              name="website"
+              id="fcc"
+              value="google"
+            />Free Code Camp</label
+          >
+        </div>
+        <div class="form-input">
+          <label for="comments">Additional Comments</label>
+          <textarea
+            name="comments"
+            id="comments"
+            cols="30"
+            rows="10"
+            placeholder="Please enter your feedback"
+            class="w-100"
+          ></textarea>
+        </div>
+        <button class="btn btn-submit bnt-primary" id="submit" type="submit">
+          Submit
+        </button>
+      </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

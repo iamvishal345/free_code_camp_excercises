@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: #f0f0f0;
+      }
+      .container {
+        display: flex;
+      }
+      .flex {
+        display: flex;
+        list-style: none;
+        flex-flow: row wrap;
+        width: 7rem;
+        height: 20rem;
+        align-content: space-evenly;
+        padding: 0;
+        margin: 0;
+        position: fixed;
+        margin-top: 3rem;
+      }
+      .nav-link {
+        text-decoration: none;
+        font-weight: 600;
+        padding: 5px;
+        margin: 10px;
+        background-color: blueviolet;
+        color: white;
+        border-radius: 5%;
+        white-space: nowrap;
+      }
+      .nav-header {
+        font-size: 20px;
+        margin: 10px;
+        padding: 0;
+        width: 16rem;
+      }
+      #navbar {
+        display: flex;
+        flex-flow: column wrap;
+        width: 5rem;
+      }
+      .site-content {
+        text-align: justify;
+        margin: auto;
+        background-color: white;
+        margin-top: 2rem;
+      }
+      pre {
+        background-color: #e0e0e0;
+        border-radius: 10px;
+        color: rgba(0, 0, 0, 0.9);
+        font-family: Consolas, monospace;
+        margin-bottom: 10px;
+        overflow: auto;
+        padding: 10px;
+      }
+      @media screen and (min-width: 768px) {
+        .site-content {
+          padding: 1% 2% 2% 2%;
+          width: 53%;
+        }
+      }
+    </style>
+    <div class="container">
+      <header>
+        <nav id="navbar">
+          <header>
+            <h5 class="nav-header">Full Stack Development using JavaScript</h5>
+          </header>
+          <ol class="flex">
+            <li>
+              <a class="nav-link" href="#what_is_mern_stack"
+                >What is MERN Stack</a
+              >
+            </li>
+            <li><a class="nav-link" href="#javascript">JavaScript</a></li>
+            <li><a class="nav-link" href="#react.js">React.JS</a></li>
+            <li>
+              <a class="nav-link" href="#node.js">Node.JS</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#express">Express</a>
+            </li>
+            <li><a class="nav-link" href="#mongodb">MongoDB</a></li>
+          </ol>
+        </nav>
+      </header>
+      <main class="site-content" id="main-doc">
+        <section id="what_is_mern_stack" class="main-section">
+          <header>
+            <h3>What is MERN Stack</h3>
+          </header>
+          <p>
+            <strong>Full Stack Development Solution</strong>
+          </p>
+          <p>
+            <strong>MERN Stack:</strong> MERN Stack is a Javascript Stack that
+            is used for easier and faster deployment of full-stack web
+            applications. MERN Stack comprises of 4 technologies namely:
+            <strong>MongoDB, Express, React and Node.js.</strong> It is designed
+            to make the development process smoother and easier. Each of these 4
+            powerful technologies provides an end-to-end framework for the
+            developers to work in and each of these technologies play a big part
+            in the development of web applications.
+          </p>
+          <strong>Why use MERN Stack?</strong>
+          <ul>
+            <li>Every line of code is written in JavaScript</li>
+            <li>
+              Using the MERN stack enables developers to build highly efficient
+              web applications.
+            </li>
+            <li>
+              It supports MVC architecture for the smooth development process.
+            </li>
+            <li>Has an extensive set of testing tools.</li>
+            <li>Has good open-source community support.</li>
+          </ul>
+        </section>
+        <hr />
+        <section id="javascript" class="main-section">
+          <header>
+            <h3>JavaScript</h3>
+          </header>
+          <p>
+            <strong
+              >JavaScript:Lightweight Interpreted or just-in-time compiled
+              programming language</strong
+            >
+          </p>
+          <p>
+            JavaScript (JS) is a lightweight, interpreted, or just-in-time
+            compiled programming language with first-class functions. While it
+            is most well-known as the scripting language for Web pages, many
+            non-browser environments also use it, such as Node.js, Apache
+            CouchDB and Adobe Acrobat. JavaScript is a prototype-based,
+            multi-paradigm, single-threaded, dynamic language, supporting
+            object-oriented, imperative, and declarative (e.g. functional
+            programming) styles. Read more about JavaScript.
+          </p>
+          <code></code>
+          <strong>Why use JavaScript?</strong>
+          <ul>
+            <li>
+              Speed. Client-side JavaScript is very fast because it can be run
+              immediately
+            </li>
+            <li>
+              Simplicity. JavaScript is relatively simple to learn and
+              implement.
+            </li>
+            <li>Popularity. Huge open-source community support</li>
+            <li>Gives the ability to create rich interfaces.</li>
+            <li>Event-Based Programming language</li>
+          </ul>
+        </section>
+        <hr />
+        <section id="react.js" class="main-section">
+          <header>
+            <h3>React.JS</h3>
+          </header>
+          <p><strong>React: Front-End Framework</strong></p>
+          <p>
+            React is a JavaScript library that is used for building user
+            interfaces. React is used for the development of single-page
+            applications and mobile applications because of its ability to
+            handle rapidly changing data. React allows users to code in
+            JavasScript and create UI components.
+          </p>
+          <strong>Why use React?</strong>
+          <ul>
+            <li>
+              Virtual DOM – A virtual DOM object is a representation of a DOM
+              object. Virtual DOM is actually a copy of the original DOM. Any
+              modification in the web application causes the entire UI to
+              re-render the virtual DOM. Then the difference between the
+              original DOM and this virtual DOM is compared and the changes are
+              made accordingly to the original DOM.
+            </li>
+            <li>
+              JSX – Stands for JavaScript XML. It is an HTML/XML JavaScript
+              Extension which is used in React. Makes it easier and simpler to
+              write React components.
+            </li>
+            <li>
+              Components – ReactJS supports Components. Components are the
+              building blocks of UI wherein each component has a logic and
+              contributes to the overall UI. These components also promote code
+              reusability and make the overall web application easier to
+              understand.
+            </li>
+            <li>
+              High Performance – Features like Virtual DOM, JSX and Components
+              makes it much faster than the rest of the frameworks out there.
+            </li>
+            <li>
+              Developing Android/Ios Apps – With React Native you can easily
+              code Android-based or IOS-Based apps with just the knowledge of
+              JavaScript and ReactJS.
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              You can start your react application by first installing
+              “create-react-app” using npm or yarn.
+              <code><pre>npm install create-react-app --global</pre></code>
+              <p style="text-align: center">OR</p>
+              <pre>yarn global add create-react-app</pre>
+            </li>
+            <li>
+              After that you can create a new react app by using.
+              <pre>create-react-app app_name</pre>
+              <p>
+                Then navigate into the “app_name” folder and type
+                <strong>yarn start</strong> or <strong>npm start</strong> to
+                start your application.<br />
+              </p>
+            </li>
+          </ul>
+
+          <code></code>
+        </section>
+        <hr />
+        <section id="node.js" class="main-section">
+          <header>
+            <h3>Node.JS</h3>
+          </header>
+          <p><strong>Node.js: JS Runtime Environment</strong></p>
+          <p>
+            Node.js provides a JavaScript Environment which allows the user to
+            run their code on the server (outside the browser). Node pack
+            manager i.e. npm allows the user to choose from thousands of free
+            packages (node modules) to download.
+          </p>
+          <strong>Why use Node.JS?</strong>
+          <ul>
+            <li>Open source JavaScript Runtime Environment</li>
+            <li>Single threading – Follows a single threaded model.</li>
+            <li>Data Streaming</li>
+            <li>
+              Fast – Built on Google Chrome’s JavaScript Engine, Node.js has a
+              fast code execution.
+            </li>
+            <li>Highly Scalable</li>
+          </ul>
+          <ul>
+            <li>
+              Initialize a Node.js application by typing runing the below
+              command in the command window. Accept the standard settings.
+              <code><pre>npm init</pre></code>
+            </li>
+            <li>
+              Create a file named index.js.<br />
+              <strong>Example:</strong><br />
+              A basic Node.js example to compute the perimeter &amp; area of a
+              rectangle.
+              <p></p>
+              <pre>
+var rectangle = { 
+	perimeter: (x, y) => (2*(x+y)), 
+	area: (x, y) => (x*y) 
+}; 
+	
+function Rectangle(l, b) { 
+	console.log("A rectangle with l = " + l + " and b = " + b); 
+	
+	if (l <= 0 || b <= 0) { 
+		console.log("Error! Rectangle's length & breadth should be greater than 0:  l = "
+						+ l + ",  and b = " + b); 
+	} 
+	else { 
+		console.log("Area of the rectangle: " + rectangle.area(l, b)); 
+		console.log("Perimeter of the rectangle: " + rectangle.perimeter(l, b)); 
+	} 
+} 
+	
+Rectangle(1, 8); 
+Rectangle(3, 12); 
+Rectangle(-6, 3); 
+							</pre
+              >
+            </li>
+            <li>
+              Run the node application by running the below command in the
+              command window.
+              <pre>npm start</pre>
+            </li>
+          </ul>
+        </section>
+        <hr />
+        <section id="express" class="main-section">
+          <header>
+            <h3>Express</h3>
+          </header>
+          <p><strong>Express: Back-End Framework:</strong></p>
+          <p>
+            Express is a Node.js framework. Rather than writing the code using
+            Node.js and creating loads of Node modules, Express makes it simpler
+            and easier to write the back-end code. Express helps in designing
+            great web applications and APIs. Express supports many middlewares
+            which makes the code shorter and easier to write.
+          </p>
+          <strong>Why use Express?</strong>
+          <ul>
+            <li>Asynchronous and Single-threaded.</li>
+            <li>Efficient, fast & scalable</li>
+            <li>Has the biggest community for Node.js</li>
+            <li>Express promotes code reusability with its built-in router.</li>
+            <li>Robust API</li>
+          </ul>
+          <code>
+            <ul>
+              <li>
+                Create a new folder to start your express project and type below
+                command in the command prompt to initialize a package.json file.
+                Accept the default settings and continue.
+                <pre>npm init</pre>
+              </li>
+              <li>
+                Then install express by typing the below command and hit enter.
+                Now finally create a file inside the directory named index.js.
+                <pre>npm install express --save</pre>
+              </li>
+              <li>
+                <strong
+                  >Now type in the following in index.js to create a sample
+                  server.</strong
+                >
+                <pre>
+const express = require('express'), 
+http = require('http'); 
+	
+const hostname = 'localhost'; 
+const port = 8080; 
+const app = express(); 
+	
+app.use((req, res) => { 
+	console.log(req.headers); 
+	res.statusCode = 200; 
+	res.setHeader('Content-Type', 'text/html'); 
+	res.end('<code> &lthtml&gt &ltbody&gt &lth1&gt This is a test server &lt/h1&gt &lt/body&gt &lt/html&gt</code>'); 	
+}); 
+const sample_server = http.createServer(app); 
+	
+sample_server.listen(port, hostname, () => { 
+	console.log(`Server running at http://${hostname}:${port}/`); 
+}); 
+							</pre>
+              </li>
+            </ul>
+          </code>
+        </section>
+        <hr />
+        <section id="mongodb" class="main-section">
+          <header>
+            <h3>MongoDB</h3>
+          </header>
+          <p>
+            <strong>MongoDB: Cross-platform Document-Oriented Database</strong>
+          </p>
+          <p>
+            MongoDB is a NoSQL database where each record is a document
+            comprising of key-value pairs that are similar to JSON (JavaScript
+            Object Notation) objects. MongoDB is flexible and allows its users
+            to create schema, databases, tables, etc. Documents that are
+            identifiable by a primary key make up the basic unit of MongoDB.
+            Once MongoDB is installed, users can make use of Mongo shell as
+            well. Mongo shell provides a JavaScript interface through which the
+            users can interact and carry out operations (eg: querying, updating
+            records, deleting records).
+          </p>
+          <strong>Why use MongoDB?</strong>
+          <ul>
+            <li>
+              Fast – Being a document-oriented database, easy to index
+              documents. Therefore a faster response.
+            </li>
+            <li>
+              Scalability – Large data can be handled by dividing it into
+              several machines.
+            </li>
+            <li>
+              Use of JavaScript – MongoDB uses JavaScript which is the biggest
+              advantage.
+            </li>
+            <li>Schema Less – Any type of data in a separate document.</li>
+            <li>
+              Data stored in the form of JSON –
+              <ol>
+                <li>Objects, Object Members, Arrays, Values and Strings</li>
+                <li>JSON syntax is very easy to use.</li>
+                <li>JSON has a wide range of browser compatibility.</li>
+                <li>
+                  Sharing Data: Data of any size and type(video, audio) can be
+                  shared easily.
+                </li>
+              </ol>
+            </li>
+            <li>
+              Simple Environment Setup – Its really simple to set up MongoDB.
+            </li>
+            <li>
+              Flexible Document Model – MongoDB supports document-model(tables,
+              schemas, columns & SQL) which is faster and easier.
+            </li>
+          </ul>
+          <code>
+            <ol>
+              <li>
+                <strong
+                  >Creating a database: Simply done using a “use”
+                  command:</strong
+                >
+                <pre>use database_name;</pre>
+              </li>
+              <li>
+                <strong
+                  >Creating a table: If the collection/table doesn’t exist then
+                  a new collection/table will be created:</strong
+                >
+                <pre>db.createCollection("collection_name");</pre>
+              </li>
+              <li>
+                <strong>Inserting records into the collection:</strong>
+                <pre>
+db.collection_name.insert
+(
+	{
+		"id" : 1,
+		"Name" : "Klaus",
+		"Department": "Technical",
+		"Organization": "Geeks For Geeks"
+	}
+);</pre>
+              </li>
+              <li>
+                <strong>Querying a document:</strong>
+                <pre>
+db.collection_name.find({Name : "Klaus"}).forEach(printjson);</pre>
+              </li>
+            </ol>
+          </code>
+        </section>
+      </main>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Landing Page</title>
+  </head>
+  <body>
+		<style>
+			.flex{
+				display: flex;
+				flex-wrap: wrap;
+			}
+			.nav-link{
+				text-decoration: none;
+				font-weight: 700;
+			}
+			#nav-bar{
+				position: fixed;
+				top: 0; 
+				left: 0;
+				width: 100%;
+			}
+			@media(min-width:576px){
+				.responsive-player{
+					width:500px; 
+					height:250px;
+				}
+			}
+			@media(min-width:768px){
+				.responsive-player{
+					width:760px; 
+					height:280px;
+				}
+			}
+			@media(min-width:992px){
+				.responsive-player{
+					width:992px; 
+					height:380px;
+				}
+			}
+			@media(min-width:1200px){
+				.responsive-player{
+					width:1200px; 
+					height:600px;
+				}
+			}
+		</style>
+    <header id="header">
+      <img id="header-img" src="" alt="" />
+      <nav id="nav-bar">
+        <ol class="flex">
+          <ul>
+            <a class="nav-link" href="#home">Home</a>
+          </ul>
+          <ul>
+            <a class="nav-link" href="#about">About Us</a>
+          </ul>
+          <ul>
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </ul>
+        </ol>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <h3>Home</h3>
+        <em>Short Video about product</em>
+				<video
+					class="responsive-player"
+          id="video"
+					src="https://static.videezy.com/system/resources/previews/000/017/942/original/ICON-VERSION1.mp4"
+					 controls
+        ></video>
+      </section>
+      <section id="about">
+        <h3>About US</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+          iste consequatur doloribus pariatur quaerat, veritatis dolores quidem
+          error, quisquam porro laborum. Accusamus eveniet modi adipisci nobis,
+          ipsa molestiae totam rerum.
+        </p>
+      </section>
+      <section id="contact">
+        <div>
+          <h3>Contact Us</h3>
+          <form
+            id="form"
+            method="POST"
+            action=" https://www.freecodecamp.com/email-submit"
+          >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Please enter Email ID"
+            />
+            <input id="submit" type="submit" value="Submit" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
