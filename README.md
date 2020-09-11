@@ -1,2 +1,4 @@
-# free_code_camp_excercises
+# Free Code Camp Certification Excercises
 Free Code Camp Certification Excercises
+  DSA with Javascript
+  Responsive Web Design 
