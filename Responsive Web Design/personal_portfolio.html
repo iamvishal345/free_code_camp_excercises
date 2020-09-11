@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Personal Portfolio Webpage</title>
+  </head>
+  <body>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        font-family: "Open Sans Condensed", sans-serif;
+      }
+      main {
+        background-color: #f7f7f7;
+      }
+      #welcome-section {
+        width: 100%;
+        height: 100vh;
+      }
+      .nav-link {
+        text-decoration: none;
+        font-weight: 600;
+        color: white;
+      }
+      #navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #072c3e;
+        color: white;
+      }
+      .flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      .nav-list {
+        list-style: none;
+        color: white;
+        position: sticky;
+        font-size: 20px;
+      }
+      .cover {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+      .cover > .title {
+        font-size: 4rem;
+        margin: 0;
+        margin-bottom: 10px;
+      }
+      .cover > .subtitle {
+        font-size: 2rem;
+      }
+      .sub-header {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+      }
+      .bio {
+        font-size: 20px;
+        text-align: justify;
+        width: 80%;
+        margin: auto;
+      }
+      .mt-20 {
+        margin-top: 20px;
+      }
+      #button {
+        display: inline-block;
+        background-color: #ff9800;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 4px;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1000;
+      }
+      #button::after {
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 5px;
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+        content: "";
+        margin-top: 23px;
+      }
+      #button:hover {
+        cursor: pointer;
+        background-color: #333;
+      }
+      #button:active {
+        background-color: #555;
+      }
+      #button.show {
+        opacity: 1;
+        visibility: visible;
+      }
+      hr {
+        box-shadow: 0px 2px 11px 0px #333;
+      }
+      .project-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      .project-tile {
+        max-width: 25%;
+        padding: 20px;
+        box-shadow: 5px -4px 6px 2px #333;
+      }
+      section#projects {
+        margin-bottom: 40px;
+      }
+      @media (max-width: 767px) {
+        .project-tile {
+          min-width: 70%;
+          margin-bottom: 20px;
+        }
+        .cover > .title {
+          font-size: 2.3rem;
+        }
+        .cover > .subtitle {
+          font-size: 1rem;
+        }
+        .flex {
+          flex-direction: column;
+          align-items: flex-end;
+          margin-right: 20px;
+        }
+      }
+    </style>
+    <nav id="navbar">
+      <ul class="flex nav-list">
+        <li>
+          <a class="nav-link" href="#welcome-section">Home</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#about-me">About ME</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li>
+          <a
+            class="nav-link"
+            id="profile-link"
+            href="https://github.com/iamvishal345/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+        </li>
+        <li>
+          <a
+            class="nav-link"
+            id="profile-link"
+            href="https://www.freecodecamp.org/iamvishal345"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Free Code Camp</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <a id="button"></a>
+    <main>
+      <section id="welcome-section">
+        <div class="cover">
+          <h1 class="title">Hey! It's so nice to see you here!</h1>
+          <span class="subtitle"
+            >I am Full Stack Engineer and primarily work with JavaScript</span
+          >
+        </div>
+      </section>
+      <hr />
+      <section id="about-me">
+        <h1 class="sub-header">About Me</h1>
+        <p class="bio">
+          <strong>Full Stack Software Engineer</strong> with 2 years of
+          experience primarily working with JavaScript. Solid knowledge of web
+          technologies such as React, Lit Element, Gatsby and API development in
+          Node Express.
+        </p>
+        <div class="bio mt-20">
+          <strong>Skills Languages & Frameworks:</strong>
+          <ul>
+            <li>JavaScript</li>
+            <li>React.js, Lit Element (Polymer3),Redux</li>
+            <li>Node.js, Express.js</li>
+            <li>HTML, CSS</li>
+            <li>Python Fundamentals</li>
+          </ul>
+          <strong>Bundling and Testing Tools:</strong>
+          <ul>
+            <li>Karma, Jest, Enzyme</li>
+            <li>Webpack</li>
+            <li>Lighthouse (Accessibility Testing)</li>
+          </ul>
+          <strong>DBMS:</strong>
+          <ul>
+            <li>MongoDB, MySQL</li>
+          </ul>
+          <strong>Software Development Processes and Tools:</strong>
+          <ul>
+            <li>Scrum, Agile Development Methodologies</li>
+            <li>Visual Studio</li>
+            <li>Jira, Bitbucket, Git, Docker, Jenkins</li>
+          </ul>
+          <strong>Business Skills and Artifacts:</strong>
+          <ul>
+            <li>User Stories Creation</li>
+            <li>Requirement Gathering and Analysis</li>
+          </ul>
+          <strong>Certifications</strong>
+          <ul>
+            <li>JavaScript (Basic) Certificate – HackerRank</li>
+            <li>React (Basic) Certificate - HackerRank</li>
+            <li>Problem Solving (Basic) Certificate – HackerRank</li>
+            <li>Infosys Certified React.js Developer</li>
+            <li>Infosys Certified Agile Developer</li>
+            <li>Infosys Certified JavaScript Developer</li>
+            <li>Infosys Certified MongoDB Developer</li>
+            <li>JavaScript Algorithms and Data Structures - Free Code Camp</li>
+          </ul>
+        </div>
+      </section>
+      <hr />
+      <section id="projects">
+        <h1 class="sub-header">My Projects</h1>
+        <div class="project-container">
+          <div class="project-tile">
+            <strong>Sample Project One</strong>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="">See Live</a>
+          </div>
+          <div class="project-tile">
+            <strong>Sample Project Two</strong>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="">See Live</a>
+          </div>
+          <div class="project-tile">
+            <strong>Sample Project Two</strong>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="">See Live</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script>
+      var btn = document.getElementById("button");
+      console.log("HERE");
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 300) {
+          btn.classList.add("show");
+        } else {
+          btn.classList.remove("show");
+        }
+      });
+      btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        console.log("Here");
+        // console.log(document.getElementsByTagName("body")[0].animate());
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth",
+        });
+        //   document
+        //     .getElementsByTagName("body")[0]
+        //     .animate({ scrollTop: 0 }, "300");
+      });
+    </script>
+  </body>
+</html>
